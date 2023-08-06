@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color: rgb(63, 170, 216);
+}
+.container{
+    width: 400px;
+    height: 400px;
+   background-color: rgb(78, 180, 224) ;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+  /*  border: 3px solid black;*/ 
+    border-radius: 50%;
+    box-shadow: 15px 15px 30px rgb(40, 156, 202),
+    -15px -15px 30px rgb(35, 143, 189);
+}
+.clock{
+    width: 325px;
+    height: 325px;
+    position:absolute;
+    transform: translate(-50%,-50%);
+    background-image: url(clockbackground.png);
+    background-size: cover;
+    top:50%;
+    left: 50%;
+    border-radius: 50%;
+    box-shadow: inset 15px 15px 30px rgb(35, 149, 194),
+       inset -15px -15px 30px rgb(24, 121, 163);
+}
+.point{
+    width: 15px;
+    height: 15px;
+    border: 2px solid white;
+    position:absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 50px;
+    background-color: black;
+    
+}
+#hour{
+    width: 5px;
+    height: 80px;
+    color: black;
+    top: 82px;
+    left: 163px;
+    background-color: black;
+}
+#minute{
+    width: 5px;
+    height: 91px;
+    color: black;
+    top: 65px;
+    left: 161px;
+    background-color:black;
+
+}
+#second{
+    width: 5px;
+    height: 107px;
+    color:red ;
+    top: 56px;
+    left: 163px;
+    background-color: red;
+}
+#hour,#minute,#second{
+    position: absolute;
+    border-radius: 10px;
+    transform-origin: bottom;
+    justify-content: center;
+
+    
+}
+.analog{
+    width:123px;
+    height: 40px;
+    border: 3px solid black;
+    position: absolute;
+    border-radius: 15px;
+    transform: translate(-50%,-50%);
+    top: 102px;
+    left: 167px;
+}
+#hr{
+        font-size: 29px;
+        position: absolute;
+        color: black;
+        left: 6px;
+        top: 5px;
+}
+#min{
+    font-size: 29px;
+    position: absolute;
+    color: black;
+    left: 44px;
+    top: 5px;
+}
+#sec{
+    font-size: 29px;
+    color: red;
+    position: absolute;
+    left: 85px;
+    top: 5px;
+}
+.p1{
+    font-size: 36px;
+    position: absolute;
+    top: -1px;
+    left: 33px
+}
+.p2{
+    font-size: 36px;
+    position: absolute;
+    top: -1px;
+    left: 70px;
+}
+
+/* callender */
+#day{
+    width:115px;
+    height: 38px;
+    border: 3px solid black;
+    position: absolute;
+    border-radius: 15px;
+    transform: translate(-50%,-50%);
+    top: 230px;
+    left: 167px;
+    text-align: center;
+    font-size: 23px;
+}
